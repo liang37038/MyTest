@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E26a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="funnyCell1" rowHeight="160" id="KGk-i7-Jjw" customClass="FunnyTableViewCell1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7F-Up-pbg">
+                        <rect key="frame" x="8" y="8" width="304" height="143.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="w7F-Up-pbg" secondAttribute="height" multiplier="56:25" id="wF1-2j-6H4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="wF1-2j-6H4"/>
+                            </mask>
+                        </variation>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="w7F-Up-pbg" secondAttribute="bottom" id="1EJ-lD-Jut"/>
+                    <constraint firstItem="w7F-Up-pbg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="BhU-ys-nPs"/>
+                    <constraint firstItem="w7F-Up-pbg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="XYD-1S-KLR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="w7F-Up-pbg" secondAttribute="trailing" id="qEa-U3-kuj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="scrollView" destination="w7F-Up-pbg" id="33P-Ix-j51"/>
+            </connections>
+            <point key="canvasLocation" x="407" y="186"/>
+        </tableViewCell>
+    </objects>
+</document>

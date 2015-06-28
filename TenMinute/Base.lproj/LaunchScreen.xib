@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E17e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Kaufmann BT.ttf">
+            <string>KaufmannBT-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XhO-qH-qL5" userLabel="背景">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="q7E-0E-Na2">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="q7E-0E-Na2" secondAttribute="bottom" id="Nie-dR-nbL"/>
+                        <constraint firstAttribute="trailing" secondItem="q7E-0E-Na2" secondAttribute="trailing" id="Ytw-ox-Uh4"/>
+                        <constraint firstItem="q7E-0E-Na2" firstAttribute="leading" secondItem="XhO-qH-qL5" secondAttribute="leading" id="flj-h4-7TL"/>
+                        <constraint firstItem="q7E-0E-Na2" firstAttribute="top" secondItem="XhO-qH-qL5" secondAttribute="top" id="iBj-IW-Ht0"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3s4-qv-ubR" userLabel="表层">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="seX-eK-Tot">
+                            <rect key="frame" x="120" y="123" width="135" height="145"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="seX-eK-Tot" secondAttribute="height" multiplier="162:175" id="TwK-kP-DLG"/>
+                                <constraint firstAttribute="width" secondItem="seX-eK-Tot" secondAttribute="height" multiplier="40:43" id="tan-V9-wkK"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="TwK-kP-DLG"/>
+                                </mask>
+                            </variation>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在生活里的10分钟...." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eta-GG-ajd">
+                            <rect key="frame" x="104" y="300" width="167" height="22"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="life  in  10  minutes...." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ypb-il-Jxc">
+                            <rect key="frame" x="112" y="330" width="152" height="24"/>
+                            <fontDescription key="fontDescription" name="KaufmannBT-Regular" family="Kaufmann BT" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="Ypb-il-Jxc" secondAttribute="centerX" id="JPd-9r-qK1"/>
+                        <constraint firstItem="seX-eK-Tot" firstAttribute="top" secondItem="3s4-qv-ubR" secondAttribute="top" constant="123" id="QKo-JV-fmN"/>
+                        <constraint firstAttribute="centerX" secondItem="eta-GG-ajd" secondAttribute="centerX" id="Y6I-iD-0bz"/>
+                        <constraint firstItem="seX-eK-Tot" firstAttribute="leading" secondItem="3s4-qv-ubR" secondAttribute="leading" constant="120" id="cBx-Ry-gVO"/>
+                        <constraint firstItem="eta-GG-ajd" firstAttribute="top" secondItem="seX-eK-Tot" secondAttribute="bottom" constant="32" id="ebe-UF-AMf"/>
+                        <constraint firstAttribute="centerX" secondItem="seX-eK-Tot" secondAttribute="centerX" id="mGB-eL-zxc"/>
+                        <constraint firstItem="Ypb-il-Jxc" firstAttribute="top" secondItem="eta-GG-ajd" secondAttribute="bottom" constant="8" id="mzO-hN-qZV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XhO-qH-qL5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3Kn-zE-31E"/>
+                <constraint firstItem="3s4-qv-ubR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4Ko-qX-qlu"/>
+                <constraint firstAttribute="bottom" secondItem="3s4-qv-ubR" secondAttribute="bottom" id="5Wu-jR-riP"/>
+                <constraint firstAttribute="trailing" secondItem="3s4-qv-ubR" secondAttribute="trailing" id="6Ph-2d-uKV"/>
+                <constraint firstItem="XhO-qH-qL5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LMI-mb-ufF"/>
+                <constraint firstAttribute="bottom" secondItem="XhO-qH-qL5" secondAttribute="bottom" id="XWz-sb-a4x"/>
+                <constraint firstItem="3s4-qv-ubR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rMQ-GB-Ced"/>
+                <constraint firstAttribute="trailing" secondItem="XhO-qH-qL5" secondAttribute="trailing" id="xSl-Us-cqc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="517.5" y="325.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="launch_bg.png" width="640" height="1136"/>
+        <image name="logo.png" width="160" height="160"/>
+    </resources>
+</document>

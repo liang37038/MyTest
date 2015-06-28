@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E17e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="playItemCell" rowHeight="130" id="KGk-i7-Jjw" customClass="PlayItemTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="du2-Py-qmp">
+                        <rect key="frame" x="8" y="8" width="110" height="110"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="du2-Py-qmp" secondAttribute="height" multiplier="1:1" id="6LS-zg-G9w"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0C-E0-hST">
+                        <rect key="frame" x="148" y="34" width="40" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8g-H9-hY6">
+                        <rect key="frame" x="148" y="64" width="144" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="du2-Py-qmp" secondAttribute="bottom" constant="-0.5" id="3Rj-im-raU"/>
+                    <constraint firstItem="du2-Py-qmp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="7Ht-aJ-eQD"/>
+                    <constraint firstItem="X0C-E0-hST" firstAttribute="leading" secondItem="du2-Py-qmp" secondAttribute="trailing" constant="30" id="Fqu-Y5-fRf"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="U8g-H9-hY6" secondAttribute="trailing" constant="20" id="IDR-to-Rfo"/>
+                    <constraint firstAttribute="centerY" secondItem="du2-Py-qmp" secondAttribute="centerY" constant="-0.25" id="SNi-6o-sjm"/>
+                    <constraint firstItem="du2-Py-qmp" firstAttribute="leading" secondItem="X0C-E0-hST" secondAttribute="trailing" constant="15" id="d25-ZP-QKp"/>
+                    <constraint firstItem="du2-Py-qmp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="dHl-Jr-hCd"/>
+                    <constraint firstItem="X0C-E0-hST" firstAttribute="leading" secondItem="U8g-H9-hY6" secondAttribute="leading" id="eRS-LV-MiN"/>
+                    <constraint firstItem="U8g-H9-hY6" firstAttribute="top" secondItem="X0C-E0-hST" secondAttribute="bottom" constant="10" id="kvR-I2-jph"/>
+                    <constraint firstItem="X0C-E0-hST" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="26" id="pa1-Qj-PfG"/>
+                    <constraint firstItem="du2-Py-qmp" firstAttribute="top" secondItem="X0C-E0-hST" secondAttribute="top" constant="-18" id="qqS-dp-ZYS"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="d25-ZP-QKp"/>
+                        <exclude reference="qqS-dp-ZYS"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="playDesc" destination="U8g-H9-hY6" id="5ed-q0-d30"/>
+                <outlet property="playPic" destination="du2-Py-qmp" id="CF8-wd-o77"/>
+                <outlet property="playTitle" destination="X0C-E0-hST" id="09E-xt-EwX"/>
+            </connections>
+            <point key="canvasLocation" x="199" y="232"/>
+        </tableViewCell>
+    </objects>
+</document>
